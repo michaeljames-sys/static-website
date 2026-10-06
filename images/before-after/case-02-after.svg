@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCase2After" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgCase2After)"/>
+  
+  <!-- Crown / Vertex Silhouette (Top View) -->
+  <ellipse cx="400" cy="300" rx="220" ry="240" fill="#334155" opacity="0.4"/>
+  
+  <!-- Completely Dense Spiral Hair Whorl -->
+  <circle cx="400" cy="280" r="120" fill="#0b192c" stroke="#0d9488" stroke-width="2"/>
+  
+  <!-- Natural Swirl Pattern Strokes -->
+  <g stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.85">
+    <path d="M 400 280 Q 420 260 450 250" fill="none"/>
+    <path d="M 400 280 Q 430 290 460 300" fill="none"/>
+    <path d="M 400 280 Q 410 320 420 350" fill="none"/>
+    <path d="M 400 280 Q 380 320 370 350" fill="none"/>
+    <path d="M 400 280 Q 360 290 330 300" fill="none"/>
+    <path d="M 400 280 Q 370 260 340 250" fill="none"/>
+    <path d="M 400 280 Q 390 240 400 210" fill="none"/>
+  </g>
+
+  <!-- Complete Full Hair Density -->
+  <path d="M 240 180 C 320 100 480 100 560 180 C 620 250 620 380 560 440 C 480 500 320 500 240 440 C 180 370 180 250 240 180 Z" 
+        fill="#020617"/>
+
+  <!-- Badges -->
+  <rect x="40" y="40" width="180" height="44" rx="8" fill="#0d9488" opacity="0.95"/>
+  <text x="130" y="67" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">AFTER (10 Months)</text>
+
+  <rect x="40" y="510" width="320" height="50" rx="8" fill="#0f172a" stroke="#0d9488"/>
+  <text x="55" y="535" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600">Case 2: 2,400 FUE Grafts</text>
+  <text x="55" y="552" fill="#2dd4bf" font-family="'Inter', sans-serif" font-size="12">Natural Whorl Reconstruction &amp; Full Crown</text>
+</svg>

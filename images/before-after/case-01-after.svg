@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCaseAfter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="denseHair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgCaseAfter)"/>
+  
+  <!-- Clinical Patient Silhouette (Same dimensions for exact alignment) -->
+  <path d="M 220 550 C 200 420 220 320 280 230 C 340 140 460 140 520 230 C 580 320 600 420 580 550 Z" 
+        fill="#334155" opacity="0.4"/>
+  
+  <!-- Forehead skin area (Lowered natural hairline) -->
+  <path d="M 280 480 C 290 380 330 360 400 360 C 470 360 510 380 520 480 Z" fill="#cbd5e1" opacity="0.3"/>
+
+  <!-- Full Restored Hairline & Density (Natural Youthful Frame) -->
+  <path d="M 270 360 C 295 320 340 280 400 280 C 460 280 505 320 530 360 C 540 290 520 200 400 170 C 280 200 260 290 270 360 Z" 
+        fill="#0f172a" stroke="#0d9488" stroke-width="2.5"/>
+
+  <!-- High Density Hairline Texture Strokes -->
+  <g stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" opacity="0.8">
+    <line x1="300" y1="330" x2="305" y2="310"/>
+    <line x1="320" y1="315" x2="326" y2="295"/>
+    <line x1="340" y1="305" x2="344" y2="285"/>
+    <line x1="360" y1="295" x2="363" y2="275"/>
+    <line x1="380" y1="288" x2="382" y2="268"/>
+    <line x1="400" y1="285" x2="400" y2="265"/>
+    <line x1="420" y1="288" x2="418" y2="268"/>
+    <line x1="440" y1="295" x2="437" y2="275"/>
+    <line x1="460" y1="305" x2="456" y2="285"/>
+    <line x1="480" y1="315" x2="474" y2="295"/>
+    <line x1="500" y1="330" x2="495" y2="310"/>
+  </g>
+
+  <!-- Feathered Transition Zone (Soft single follicles) -->
+  <g fill="#2dd4bf" opacity="0.9">
+    <circle cx="310" cy="326" r="2.5"/>
+    <circle cx="335" cy="308" r="2.5"/>
+    <circle cx="360" cy="296" r="2.5"/>
+    <circle cx="385" cy="289" r="2.5"/>
+    <circle cx="400" cy="286" r="2.5"/>
+    <circle cx="415" cy="289" r="2.5"/>
+    <circle cx="440" cy="296" r="2.5"/>
+    <circle cx="465" cy="308" r="2.5"/>
+    <circle cx="490" cy="326" r="2.5"/>
+  </g>
+
+  <!-- Crown Density Full Coverage -->
+  <path d="M 280 230 C 340 150 460 150 520 230 C 500 210 450 190 400 190 C 350 190 300 210 280 230 Z" 
+        fill="#020617"/>
+
+  <!-- Clinical Badge -->
+  <rect x="40" y="40" width="180" height="44" rx="8" fill="#0d9488" opacity="0.95"/>
+  <text x="130" y="67" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">AFTER (12 Months)</text>
+
+  <rect x="40" y="510" width="320" height="50" rx="8" fill="#0f172a" stroke="#0d9488"/>
+  <text x="55" y="535" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600">Case 1: 2,850 FUE Grafts</text>
+  <text x="55" y="552" fill="#2dd4bf" font-family="'Inter', sans-serif" font-size="12">Natural Temporal Peak &amp; Frontal Density</text>
+</svg>

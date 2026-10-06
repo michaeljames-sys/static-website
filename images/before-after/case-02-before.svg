@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCase2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgCase2)"/>
+  
+  <!-- Crown / Vertex Silhouette (Top View) -->
+  <ellipse cx="400" cy="300" rx="220" ry="240" fill="#334155" opacity="0.4"/>
+  <!-- Thinning Crown Swirl Area (Norwood 4 Crown) -->
+  <circle cx="400" cy="280" r="110" fill="#ef4444" opacity="0.15" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 4"/>
+  <circle cx="400" cy="280" r="30" fill="#cbd5e1" opacity="0.25"/>
+
+  <!-- Thinning sparse follicles -->
+  <g stroke="#94a3b8" stroke-width="1.8" opacity="0.4">
+    <line x1="370" y1="260" x2="350" y2="250"/>
+    <line x1="430" y1="260" x2="450" y2="250"/>
+    <line x1="400" y1="330" x2="400" y2="350"/>
+  </g>
+
+  <!-- Surrounding dense hair whorl -->
+  <path d="M 240 180 C 320 100 480 100 560 180 C 620 250 620 380 560 440 C 480 500 320 500 240 440 C 180 370 180 250 240 180 Z" 
+        fill="none" stroke="#475569" stroke-width="38" opacity="0.8"/>
+
+  <!-- Badges -->
+  <rect x="40" y="40" width="160" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
+  <text x="120" y="67" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">BEFORE (Baseline)</text>
+
+  <rect x="40" y="510" width="300" height="50" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="55" y="535" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600">Case 2: Crown / Vertex Thinning</text>
+  <text x="55" y="552" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Diffuse Pattern Miniaturization</text>
+</svg>

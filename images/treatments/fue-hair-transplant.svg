@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fueBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0b192c" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#fueBg)"/>
+  <circle cx="400" cy="300" r="280" fill="url(#glow)"/>
+  
+  <!-- Grid background lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.4">
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="250" y1="0" x2="250" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="550" y1="0" x2="550" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+  </g>
+
+  <!-- Scalp Surface Layer -->
+  <path d="M 120 460 Q 400 420 680 460 L 680 520 L 120 520 Z" fill="#334155" opacity="0.6"/>
+  <path d="M 120 450 Q 400 410 680 450" stroke="url(#tealGrad)" stroke-width="4" fill="none"/>
+  
+  <!-- Follicles -->
+  <g stroke="#94a3b8" stroke-width="3" stroke-linecap="round">
+    <path d="M 220 450 Q 210 380 205 320"/>
+    <path d="M 280 445 Q 275 370 270 300"/>
+    <path d="M 340 440 Q 338 350 335 270"/>
+    <!-- Target Follicle in Extraction Focus -->
+    <path d="M 400 435 L 400 310" stroke="url(#tealGrad)" stroke-width="5"/>
+    <path d="M 460 440 Q 465 350 470 270"/>
+    <path d="M 520 445 Q 528 370 535 300"/>
+    <path d="M 580 450 Q 590 380 600 320"/>
+  </g>
+
+  <!-- Follicular Bulbs -->
+  <circle cx="220" cy="452" r="8" fill="#64748b"/>
+  <circle cx="280" cy="447" r="8" fill="#64748b"/>
+  <circle cx="340" cy="442" r="8" fill="#64748b"/>
+  <circle cx="400" cy="437" r="12" fill="url(#tealGrad)"/>
+  <circle cx="460" cy="442" r="8" fill="#64748b"/>
+  <circle cx="520" cy="447" r="8" fill="#64748b"/>
+  <circle cx="580" cy="452" r="8" fill="#64748b"/>
+
+  <!-- FUE Precision Micro-Punch Device -->
+  <g transform="translate(400, 150)">
+    <!-- Surgical Cannula -->
+    <polygon points="-8,140 8,140 12,0 -12,0" fill="#e2e8f0"/>
+    <!-- Punch Tip -->
+    <polygon points="-5,160 5,160 8,140 -8,140" fill="url(#tealGrad)"/>
+    <line x1="0" y1="160" x2="0" y2="168" stroke="#38bdf8" stroke-width="3"/>
+    <!-- Handpiece Body -->
+    <rect x="-18" y="-90" width="36" height="90" rx="6" fill="#475569"/>
+    <rect x="-14" y="-80" width="28" height="30" rx="3" fill="#0f172a"/>
+    <line x1="-12" y1="-20" x2="12" y2="-20" stroke="#0d9488" stroke-width="3"/>
+    <circle cx="0" cy="-65" r="4" fill="#10b981"/>
+    <!-- Optical Alignment Laser Target Rings -->
+    <circle cx="0" cy="168" r="28" stroke="#2dd4bf" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+    <circle cx="0" cy="168" r="45" stroke="#0d9488" stroke-width="1" stroke-dasharray="2 4" fill="none"/>
+  </g>
+
+  <!-- Modern Clinical Badges -->
+  <g transform="translate(60, 60)">
+    <rect width="210" height="64" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="34" cy="32" r="18" fill="#0d9488" opacity="0.2"/>
+    <path d="M 27 32 L 32 37 L 42 27" fill="none" stroke="#2dd4bf" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="64" y="27" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">FUE Precision</text>
+    <text x="64" y="47" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">0.7mm - 0.85mm Punch</text>
+  </g>
+
+  <g transform="translate(530, 60)">
+    <rect width="210" height="64" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+    <circle cx="34" cy="32" r="18" fill="#d97706" opacity="0.2"/>
+    <text x="34" y="38" text-anchor="middle" fill="#fbbf24" font-size="16" font-weight="bold">98%</text>
+    <text x="64" y="27" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700">Graft Viability</text>
+    <text x="64" y="47" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Minimal Transection Rate</text>
+  </g>
+</svg>

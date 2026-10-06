@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | [CLINIC_NAME] - Medical Hair Restoration in [City]</title>
+  <meta name="description" content="Learn about [CLINIC_NAME] and medical director [Doctor Name]. Our medical philosophy, sterile surgical facilities, and patient-centered hair restoration care.">
+  <link rel="canonical" href="https://www.example.com/about.html">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/about.html">
+  <meta property="og:title" content="About Us | [CLINIC_NAME] Hair Restoration">
+  <meta property="og:description" content="Discover our clinic philosophy, surgical team, and patient-first standards in [City].">
+  <meta property="og:image" content="https://www.example.com/images/doctor/doctor-profile.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "MedicalBusiness",
+      "name": "[CLINIC_NAME]",
+      "physician": {
+        "@type": "Physician",
+        "name": "[DOCTOR_NAME]",
+        "jobTitle": "[DOCTOR_CREDENTIALS]"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="tel:[PHONE]" class="top-bar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          <span>[PHONE]</span>
+        </a>
+        <a href="mailto:[EMAIL]" class="top-bar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          <span>[EMAIL]</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item">📍 [ADDRESS], [CITY], [COUNTRY]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="header-logo">
+        <img src="images/icons/logo.svg" alt="[CLINIC_NAME]" width="180" height="45">
+      </a>
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li><a href="hair-transplant.html" class="nav-link">Hair Transplant</a></li>
+          <li class="nav-item-dropdown">
+            <a href="treatments.html" class="nav-link nav-dropdown-toggle">
+              Treatments
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="treatments/fue-hair-transplant.html" class="dropdown-link">FUE Hair Transplant</a>
+              <a href="treatments/dhi-hair-transplant.html" class="dropdown-link">DHI Direct Implantation</a>
+              <a href="treatments/beard-transplant.html" class="dropdown-link">Beard Transplant</a>
+              <a href="treatments/eyebrow-transplant.html" class="dropdown-link">Eyebrow Restoration</a>
+              <a href="treatments/hair-loss-consultation.html" class="dropdown-link">Scalp &amp; Hair Analysis</a>
+            </div>
+          </li>
+          <li><a href="before-after.html" class="nav-link">Before &amp; After</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary" data-open-modal="consultation">Book a Consultation</button>
+        <button type="button" class="mobile-menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="images/icons/logo.svg" alt="Apex Logo" width="150" height="38">
+      <button type="button" class="drawer-close" aria-label="Close menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+        <li><a href="about.html" class="drawer-nav-link active">About Us</a></li>
+        <li><a href="hair-transplant.html" class="drawer-nav-link">Hair Transplant Guide</a></li>
+        <li><a href="treatments.html" class="drawer-nav-link">Treatments</a></li>
+        <li><a href="before-after.html" class="drawer-nav-link">Before &amp; After</a></li>
+        <li><a href="testimonials.html" class="drawer-nav-link">Testimonials</a></li>
+        <li><a href="faq.html" class="drawer-nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="drawer-nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current">About Us</span>
+        </nav>
+        <h1 style="margin-bottom: 0.75rem;">About [CLINIC_NAME]</h1>
+        <p class="lead" style="max-width: 760px;">
+          Pioneering natural, undetectable hair restoration through dedicated surgical mastery, honest consultation, and individual patient care.
+        </p>
+      </div>
+    </section>
+
+    <!-- CLINIC STORY & PHILOSOPHY -->
+    <section class="section">
+      <div class="container grid-2" style="align-items: center;">
+        <div>
+          <span class="section-eyebrow">Our Philosophy</span>
+          <h2 style="margin-bottom: 1.25rem;">Medical Excellence Meets Aesthetic Harmony</h2>
+          <p class="lead">
+            At [CLINIC_NAME], we reject high-volume commercial factory models. We believe true clinical excellence is achieved when every patient receives the undivided focus of experienced physicians.
+          </p>
+          <p>
+            Hair restoration is fundamentally a finite resource management problem: your donor area contains a limited number of permanent follicular grafts. Our primary medical commitment is conservative donor preservation paired with optimal aesthetic impact.
+          </p>
+          <p>
+            By utilizing magnification loupes, custom micro-instruments, and refined depth control, we maximize graft survival rates while ensuring virtually imperceptible healing in both donor and recipient regions.
+          </p>
+        </div>
+        <div>
+          <img src="images/clinic/clinic-interior.jpg" alt="[CLINIC_NAME] reception and consultation interior" style="border-radius: 16px; box-shadow: var(--shadow-lg);" width="600" height="420" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTOR PROFILE SECTION -->
+    <section class="section section-alt" id="doctor-profile">
+      <div class="container grid-2" style="align-items: center;">
+        <div>
+          <img src="images/doctor/doctor-profile.jpg" alt="Medical Director [Doctor Name]" style="border-radius: 16px; box-shadow: var(--shadow-lg);" width="560" height="520" loading="lazy">
+        </div>
+        <div>
+          <span class="section-eyebrow">Medical Director</span>
+          <h2 style="margin-bottom: 0.5rem;">[DOCTOR_NAME]</h2>
+          <div style="color: var(--color-accent); font-weight: 700; font-size: 1.05rem; margin-bottom: 1.25rem;">
+            [DOCTOR_CREDENTIALS]
+          </div>
+          <p class="lead">
+            [Doctor Name] is an internationally recognized hair restoration physician dedicated exclusively to follicular unit transplantation and trichological therapies.
+          </p>
+          <p>
+            Known for an uncompromising standard of surgical precision, [Doctor Name] personally participates in graft extraction planning, hairline design, and artistic recipient angulation.
+          </p>
+          <p>
+            "A successful hair transplant is one that no observer will ever suspect occurred. It respects the patient’s facial anatomy, age progression, and natural growth patterns."
+          </p>
+          <div style="margin-top: 1.75rem;">
+            <button type="button" class="btn btn-primary" data-open-modal="consultation">Schedule Consultation with [DOCTOR_NAME]</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURGICAL FACILITIES & STANDARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Clinical Environment</span>
+          <h2 class="section-title">Modern Surgical Facilities</h2>
+          <p class="section-description">
+            Engineered from the ground up for sterility, patient comfort, and microsurgical precision.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="why-card">
+            <div class="why-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="why-card-title">Hospital-Grade Sterilization</h3>
+            <p class="why-card-text">Fully autoclave-sterilized surgical instruments, HEPA-filtered clean air suites, and strict infection control protocols.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="why-card-title">Relaxing Procedure Rooms</h3>
+            <p class="why-card-text">Ergonomic medical treatment beds, streaming entertainment, and quiet climate-controlled settings for complete comfort.</p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <h3 class="why-card-title">Microscopic Graft Sorting</h3>
+            <p class="why-card-text">Every graft is carefully inspected and separated under high magnification into 1-hair, 2-hair, and 3-hair follicular groupings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container cta-banner-content">
+        <h2 class="cta-banner-title">Speak Personally with Our Medical Team</h2>
+        <p class="cta-banner-desc">Book your confidential consultation in [CITY] and receive an honest clinical evaluation of your restoration possibilities.</p>
+        <div class="cta-banner-buttons">
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="consultation">Book a Consultation</button>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">View Clinic Location</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/icons/logo.svg" alt="[CLINIC_NAME]" width="180" height="45">
+          </a>
+          <p>[CLINIC_NAME] is committed to patient-first medical standards, microsurgical precision, and long-term follicular preservation.</p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="hair-transplant.html" class="footer-link">Hair Transplant Guide</a></li>
+            <li><a href="treatments.html" class="footer-link">Treatments</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Treatments</h3>
+          <ul class="footer-links-list">
+            <li><a href="treatments/fue-hair-transplant.html" class="footer-link">FUE Technique</a></li>
+            <li><a href="treatments/dhi-hair-transplant.html" class="footer-link">DHI Technique</a></li>
+            <li><a href="treatments/beard-transplant.html" class="footer-link">Beard Restoration</a></li>
+            <li><a href="treatments/eyebrow-transplant.html" class="footer-link">Eyebrow Restoration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Contact</h3>
+          <div class="footer-contact-item">
+            <div><strong>Phone:</strong> <a href="tel:[PHONE]">[PHONE]</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div><strong>WhatsApp:</strong> <a href="https://wa.me/18005554247" target="_blank" rel="noopener noreferrer">[WHATSAPP]</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div><strong>Address:</strong> [ADDRESS], [CITY], [COUNTRY]</div>
+          </div>
+        </div>
+      </div>
+      <div class="medical-disclaimer-note">
+        <strong>Medical Disclaimer:</strong> Information on this website is educational and does not constitute formal medical diagnosis. Outcomes vary by individual. Please consult a qualified doctor.
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 [CLINIC_NAME]. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="medical-disclaimer.html">Medical Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation Modal -->
+  <div class="modal-backdrop" id="consultationModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Book a Medical Consultation</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <form data-validate>
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" name="phone" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" name="email" class="form-input" required>
+          </div>
+          <div class="form-status" role="alert"></div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">Submit Consultation Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

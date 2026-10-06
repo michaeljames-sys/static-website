@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgCase)"/>
+  
+  <!-- Clinical Patient Silhouette (Top-Front View) -->
+  <path d="M 220 550 C 200 420 220 320 280 230 C 340 140 460 140 520 230 C 580 320 600 420 580 550 Z" 
+        fill="#334155" opacity="0.4"/>
+  
+  <!-- Forehead skin area -->
+  <path d="M 280 480 C 290 380 330 360 400 360 C 470 360 510 380 520 480 Z" fill="#cbd5e1" opacity="0.3"/>
+
+  <!-- Thinning / Receded Area Outline (Norwood Scale 3) -->
+  <path d="M 270 360 C 310 300 350 360 400 350 C 450 360 490 300 530 360 C 510 240 480 210 400 210 C 320 210 290 240 270 360 Z" 
+        fill="#ef4444" opacity="0.15" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 4"/>
+  
+  <!-- Sparse Hair Strands in Receded Zone -->
+  <g stroke="#94a3b8" stroke-width="2" opacity="0.5">
+    <line x1="330" y1="280" x2="325" y2="295"/>
+    <line x1="370" y1="270" x2="368" y2="285"/>
+    <line x1="430" y1="270" x2="432" y2="285"/>
+    <line x1="470" y1="280" x2="475" y2="295"/>
+  </g>
+
+  <!-- Crown / Donor Hair Remaining (Dense) -->
+  <path d="M 280 230 C 340 150 460 150 520 230 C 500 210 450 190 400 190 C 350 190 300 210 280 230 Z" 
+        fill="#475569" opacity="0.9"/>
+
+  <!-- Clinical Badge -->
+  <rect x="40" y="40" width="160" height="44" rx="8" fill="#dc2626" opacity="0.9"/>
+  <text x="120" y="67" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">BEFORE (Baseline)</text>
+
+  <rect x="40" y="510" width="300" height="50" rx="8" fill="#0f172a" stroke="#334155"/>
+  <text x="55" y="535" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600">Case 1: Norwood Class 3</text>
+  <text x="55" y="552" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12">Receding Temples &amp; Frontal Loss</text>
+</svg>

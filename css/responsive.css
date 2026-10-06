@@ -1,0 +1,250 @@
+/* ==========================================================================
+   RESPONSIVE STYLESHEET
+   Supports: 1440px+, 1280px, 1024px, 768px, 480px, 320px
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (Max 1100px) */
+@media (max-width: 1100px) {
+  .nav-list {
+    gap: 1.25rem;
+  }
+
+  .grid-4,
+  .why-us-grid,
+  .process-grid,
+  .credibility-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-grid {
+    gap: 2rem;
+  }
+}
+
+/* Tablets (Max 992px) */
+@media (max-width: 992px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .header-nav {
+    display: none; /* Collapses to mobile drawer */
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-trust-row {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    max-width: 540px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .floating-badge.badge-top {
+    right: 0;
+  }
+  .floating-badge.badge-bottom {
+    left: 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image-card {
+    max-width: 520px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .services-grid,
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .top-bar-right .top-hours {
+    display: none;
+  }
+}
+
+/* Mobile Devices (Max 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .section-sm {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .top-bar {
+    display: none; /* Cleaner mobile view */
+  }
+
+  /* Show floating bottom CTA bar on mobile */
+  .mobile-bottom-bar {
+    display: block;
+  }
+
+  /* Add padding to body so bottom bar doesn't overlay footer */
+  body {
+    padding-bottom: 64px;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .services-grid,
+  .why-us-grid,
+  .process-grid,
+  .testimonials-grid,
+  .credibility-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .ba-comparison-wrapper {
+    height: 380px;
+  }
+
+  .ba-case-info-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .edu-table {
+    min-width: 560px;
+  }
+
+  .about-features-list {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-badge {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.8rem;
+  }
+  .badge-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .badge-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Small Smartphone Devices (Max 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .header-actions .btn {
+    display: none; /* Clean header on very small screens, booking is in mobile drawer and bottom bar */
+  }
+
+  .hero-image-wrapper img {
+    height: 360px;
+  }
+
+  .ba-comparison-wrapper {
+    height: 300px;
+  }
+
+  .ba-handle-button {
+    width: 38px;
+    height: 38px;
+  }
+  .ba-handle-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .cta-banner-buttons .btn {
+    width: 100%;
+  }
+
+  .doctor-credentials-card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 1rem;
+  }
+
+  .faq-question-btn {
+    padding: 1.1rem 1.25rem;
+    font-size: 1rem;
+  }
+  .faq-answer-inner {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+  }
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

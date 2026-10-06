@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCase3After" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgCase3After)"/>
+  
+  <!-- Profile 3/4 View Head Outline -->
+  <path d="M 200 480 C 180 340 220 220 320 160 C 440 100 580 140 640 260 C 680 340 660 460 620 540" 
+        fill="#334155" opacity="0.4"/>
+  
+  <!-- Restored Dense Hair Area (Natural Soft Temple Closure) -->
+  <path d="M 270 340 C 300 240 380 200 460 180 C 540 180 620 230 640 330 C 620 400 540 420 400 420 C 310 420 280 370 270 340 Z" 
+        fill="#0b192c" stroke="#0d9488" stroke-width="2.5"/>
+
+  <!-- High-density flow lines -->
+  <g stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" opacity="0.8">
+    <path d="M 310 320 Q 360 260 420 240" fill="none"/>
+    <path d="M 340 310 Q 400 250 460 230" fill="none"/>
+    <path d="M 380 300 Q 440 250 500 235" fill="none"/>
+    <path d="M 430 290 Q 480 250 540 240" fill="none"/>
+  </g>
+
+  <!-- Feathered Transition Micro-grafts -->
+  <g fill="#2dd4bf" opacity="0.9">
+    <circle cx="295" cy="310" r="2.5"/>
+    <circle cx="320" cy="275" r="2.5"/>
+    <circle cx="360" cy="240" r="2.5"/>
+    <circle cx="410" cy="215" r="2.5"/>
+    <circle cx="460" cy="200" r="2.5"/>
+    <circle cx="510" cy="205" r="2.5"/>
+  </g>
+
+  <!-- Badges -->
+  <rect x="40" y="40" width="180" height="44" rx="8" fill="#0d9488" opacity="0.95"/>
+  <text x="130" y="67" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16">AFTER (9 Months)</text>
+
+  <rect x="40" y="510" width="330" height="50" rx="8" fill="#0f172a" stroke="#0d9488"/>
+  <text x="55" y="535" fill="#f8fafc" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600">Case 3: 3,100 DHI Grafts</text>
+  <text x="55" y="552" fill="#2dd4bf" font-family="'Inter', sans-serif" font-size="12">Direct Implanter Method • Sharp Natural Angle</text>
+</svg>

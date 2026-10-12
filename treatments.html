@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Treatments & Procedures | [CLINIC_NAME] Hair Restoration</title>
+  <meta name="description" content="Explore advanced hair restoration treatments at [CLINIC_NAME]: FUE, DHI, Hairline Design, Beard Transplants, Eyebrow Restoration, and Trichology Analysis in [City].">
+  <link rel="canonical" href="https://www.example.com/treatments.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.example.com/treatments.html">
+  <meta property="og:title" content="Hair Restoration Treatments | [CLINIC_NAME]">
+  <meta property="og:description" content="Precision surgical and non-surgical treatments for thinning hair and hairline restoration.">
+  <meta property="og:image" content="https://www.example.com/images/treatments/fue-hair-transplant.svg">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "Hair Restoration Treatments",
+    "description": "Comprehensive list of surgical and non-surgical hair restoration procedures offered at [CLINIC_NAME]."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <a href="tel:[PHONE]" class="top-bar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"/></svg>
+          <span>[PHONE]</span>
+        </a>
+        <a href="mailto:[EMAIL]" class="top-bar-item">
+          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+          <span>[EMAIL]</span>
+        </a>
+      </div>
+      <div class="top-bar-right">
+        <span class="top-bar-item">📍 [ADDRESS], [CITY], [COUNTRY]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="header-logo">
+        <img src="images/icons/logo.svg" alt="[CLINIC_NAME]" width="180" height="45">
+      </a>
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="hair-transplant.html" class="nav-link">Hair Transplant</a></li>
+          <li class="nav-item-dropdown">
+            <a href="treatments.html" class="nav-link nav-dropdown-toggle active">
+              Treatments
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="treatments/fue-hair-transplant.html" class="dropdown-link">FUE Hair Transplant</a>
+              <a href="treatments/dhi-hair-transplant.html" class="dropdown-link">DHI Direct Implantation</a>
+              <a href="treatments/beard-transplant.html" class="dropdown-link">Beard Transplant</a>
+              <a href="treatments/eyebrow-transplant.html" class="dropdown-link">Eyebrow Restoration</a>
+              <a href="treatments/hair-loss-consultation.html" class="dropdown-link">Scalp &amp; Hair Analysis</a>
+            </div>
+          </li>
+          <li><a href="before-after.html" class="nav-link">Before &amp; After</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="btn btn-primary" data-open-modal="consultation">Book a Consultation</button>
+        <button type="button" class="mobile-menu-toggle" aria-label="Open mobile menu" aria-expanded="false">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <img src="images/icons/logo.svg" alt="Apex Logo" width="150" height="38">
+      <button type="button" class="drawer-close" aria-label="Close menu">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="drawer-body">
+      <ul class="drawer-nav-list">
+        <li><a href="index.html" class="drawer-nav-link">Home</a></li>
+        <li><a href="about.html" class="drawer-nav-link">About Us</a></li>
+        <li><a href="hair-transplant.html" class="drawer-nav-link">Hair Transplant Guide</a></li>
+        <li><a href="treatments.html" class="drawer-nav-link active">Treatments</a></li>
+        <li><a href="before-after.html" class="drawer-nav-link">Before &amp; After</a></li>
+        <li><a href="testimonials.html" class="drawer-nav-link">Testimonials</a></li>
+        <li><a href="faq.html" class="drawer-nav-link">FAQ</a></li>
+        <li><a href="contact.html" class="drawer-nav-link">Contact Us</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="crumb-sep">/</span>
+          <span class="crumb-current">Treatments</span>
+        </nav>
+        <h1 style="margin-bottom: 0.75rem;">Our Hair Restoration Treatments</h1>
+        <p class="lead" style="max-width: 780px;">
+          Physician-performed surgical procedures and non-invasive trichology therapies tailored to address every stage of hair loss.
+        </p>
+      </div>
+    </section>
+
+    <!-- TREATMENTS GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="services-grid">
+          <!-- 1: FUE -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="images/treatments/fue-hair-transplant.svg" alt="FUE Hair Transplant" loading="lazy">
+              <span class="service-badge">Microsurgical FUE</span>
+            </div>
+            <div class="service-card-body">
+              <h2 class="service-card-title">FUE Hair Transplant</h2>
+              <p class="service-card-text">
+                Individual micro-punch follicular unit extraction that leaves no linear scar. Ideal for high graft yields, natural density, and active lifestyles.
+              </p>
+              <a href="treatments/fue-hair-transplant.html" class="service-card-link">
+                View FUE Procedure
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 2: DHI -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="images/treatments/dhi-hair-transplant.svg" alt="DHI Hair Transplant" loading="lazy">
+              <span class="service-badge">Direct Implantation</span>
+            </div>
+            <div class="service-card-body">
+              <h2 class="service-card-title">DHI Hair Transplant</h2>
+              <p class="service-card-text">
+                Direct insertion using specialized Choi implanter pens. Enables maximum control over angle, depth, and direction without prior channel incisions.
+              </p>
+              <a href="treatments/dhi-hair-transplant.html" class="service-card-link">
+                View DHI Procedure
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 3: Beard -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="images/treatments/beard-transplant.svg" alt="Beard Transplant" loading="lazy">
+              <span class="service-badge">Facial Restoration</span>
+            </div>
+            <div class="service-card-body">
+              <h2 class="service-card-title">Beard &amp; Mustache Transplant</h2>
+              <p class="service-card-text">
+                Reconstruct patchy or thin facial hair using single-hair grafts oriented along natural facial grain for sharp, masculine contours.
+              </p>
+              <a href="treatments/beard-transplant.html" class="service-card-link">
+                View Beard Procedure
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 4: Eyebrow -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="images/treatments/eyebrow-transplant.svg" alt="Eyebrow Transplant" loading="lazy">
+              <span class="service-badge">Delicate Micro-Grafts</span>
+            </div>
+            <div class="service-card-body">
+              <h2 class="service-card-title">Eyebrow Restoration</h2>
+              <p class="service-card-text">
+                Ultra-precise single follicular unit placement placed almost parallel to the skin (15° angle) to achieve natural arch symmetry.
+              </p>
+              <a href="treatments/eyebrow-transplant.html" class="service-card-link">
+                View Eyebrow Procedure
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 5: Consultation -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="images/treatments/hair-loss-consultation.svg" alt="Hair Loss Consultation" loading="lazy">
+              <span class="service-badge">Clinical Diagnostics</span>
+            </div>
+            <div class="service-card-body">
+              <h2 class="service-card-title">Hair Loss Consultation</h2>
+              <p class="service-card-text">
+                In-depth digital trichoscopy scalp scanning to assess donor graft reserves, measure follicle miniaturization rates, and outline realistic plans.
+              </p>
+              <a href="treatments/hair-loss-consultation.html" class="service-card-link">
+                View Consultation Process
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- 6: Hairline Design -->
+          <article class="service-card">
+            <div class="service-card-media">
+              <img src="images/treatments/hairline-restoration.svg" alt="Hairline Restoration Design" loading="lazy">
+              <span class="service-badge">Artistic Symmetry</span>
+            </div>
+            <div class="service-card-body">
+              <h2 class="service-card-title">Hairline Redesign &amp; Lowering</h2>
+              <p class="service-card-text">
+                Restoring youthful temporal framing with macro and micro-irregularity placement, preventing unnatural straight edges.
+              </p>
+              <a href="treatments/fue-hair-transplant.html" class="service-card-link">
+                Learn About Hairline Design
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="container cta-banner-content">
+        <h2 class="cta-banner-title">Need Guidance on the Best Treatment for You?</h2>
+        <p class="cta-banner-desc">Our doctor will evaluate your scalp and recommend the surgical or non-surgical solution that best matches your hair loss stage.</p>
+        <div class="cta-banner-buttons">
+          <button type="button" class="btn btn-primary btn-lg" data-open-modal="consultation">Book a Consultation</button>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">Contact Clinic</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo">
+            <img src="images/icons/logo.svg" alt="[CLINIC_NAME]" width="180" height="45">
+          </a>
+          <p>[CLINIC_NAME] delivers physician-led hair restoration, personalized follicular planning, and undetectable, natural results.</p>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="hair-transplant.html" class="footer-link">Hair Transplant Guide</a></li>
+            <li><a href="treatments.html" class="footer-link">Treatments</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Treatments</h3>
+          <ul class="footer-links-list">
+            <li><a href="treatments/fue-hair-transplant.html" class="footer-link">FUE Technique</a></li>
+            <li><a href="treatments/dhi-hair-transplant.html" class="footer-link">DHI Technique</a></li>
+            <li><a href="treatments/beard-transplant.html" class="footer-link">Beard Restoration</a></li>
+            <li><a href="treatments/eyebrow-transplant.html" class="footer-link">Eyebrow Restoration</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-col-title">Contact</h3>
+          <div class="footer-contact-item"><div><strong>Phone:</strong> <a href="tel:[PHONE]">[PHONE]</a></div></div>
+          <div class="footer-contact-item"><div><strong>WhatsApp:</strong> <a href="https://wa.me/18005554247" target="_blank" rel="noopener noreferrer">[WHATSAPP]</a></div></div>
+          <div class="footer-contact-item"><div><strong>Address:</strong> [ADDRESS], [CITY], [COUNTRY]</div></div>
+        </div>
+      </div>
+      <div class="medical-disclaimer-note">
+        <strong>Medical Disclaimer:</strong> Information on this page is educational and does not replace medical advice. Results vary. Consult a qualified doctor.
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 [CLINIC_NAME]. All Rights Reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="medical-disclaimer.html">Medical Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Consultation Modal -->
+  <div class="modal-backdrop" id="consultationModal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">Book a Medical Consultation</h3>
+        <button type="button" class="modal-close-btn" data-close-modal aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <form data-validate>
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" name="name" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Phone Number *</label>
+            <input type="tel" name="phone" class="form-input" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" name="email" class="form-input" required>
+          </div>
+          <div class="form-status" role="alert"></div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">Submit Consultation Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# ==============================================================================
+# Apache Configuration: SEO-Friendly Clean URLs
+# ==============================================================================
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# 1. 301 Redirect /index.html to root
+RewriteCond %{THE_REQUEST} \s/+(.+/)?index\.html[\s?] [NC]
+RewriteRule ^(.+/)?index\.html$ /%1 [R=301,L]
+
+# 2. 301 Redirect any direct request with .html to clean URL (without .html)
+# E.g. /contact.html -> /contact, /treatments/fue-hair-transplant.html -> /treatments/fue-hair-transplant
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# 3. If the request matches an existing file or directory, serve directly
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# 4. Internally rewrite clean URL to .html if the file exists
+# E.g. /contact -> contact.html, /about -> about.html
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L,QSA]
+
+</IfModule>
+
+# Custom 404 Error Page
+ErrorDocument 404 /404.html
+
+# Prevent directory browsing
+Options -Indexes +FollowSymLinks

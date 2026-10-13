@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 72" width="280" height="72" fill="none">
+  <defs>
+    <!-- Purple / Amethyst 3D Ribbon Gradients (Luminous for Dark Theme) -->
+    <linearGradient id="purpleRibbonL" x1="15%" y1="10%" x2="90%" y2="95%">
+      <stop offset="0%" stop-color="#581c87"/>
+      <stop offset="35%" stop-color="#86198f"/>
+      <stop offset="70%" stop-color="#c026d3"/>
+      <stop offset="100%" stop-color="#e879f9"/>
+    </linearGradient>
+    <linearGradient id="purpleRibbonRightL" x1="10%" y1="15%" x2="95%" y2="85%">
+      <stop offset="0%" stop-color="#701a75"/>
+      <stop offset="35%" stop-color="#a21caf"/>
+      <stop offset="70%" stop-color="#d946ef"/>
+      <stop offset="100%" stop-color="#f0abfc"/>
+    </linearGradient>
+    <linearGradient id="purpleRibbonSheenL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="45%" stop-color="#f5d0fe" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c026d3" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Emerald / Jade Visage Gradients (Radiant for Dark Theme) -->
+    <linearGradient id="jadeFaceL" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="30%" stop-color="#34d399"/>
+      <stop offset="70%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="jadeHighlightL" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="50%" stop-color="#6ee7b7"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Rose Magenta Collar Ribbons (Vibrant for Dark Theme) -->
+    <linearGradient id="magentaRibbonL" x1="5%" y1="20%" x2="95%" y2="85%">
+      <stop offset="0%" stop-color="#db2777"/>
+      <stop offset="45%" stop-color="#f43f5e"/>
+      <stop offset="80%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#fda4af"/>
+    </linearGradient>
+    <linearGradient id="magentaRibbonLowerL" x1="0%" y1="10%" x2="100%" y2="90%">
+      <stop offset="0%" stop-color="#be185d"/>
+      <stop offset="45%" stop-color="#f43f5e"/>
+      <stop offset="85%" stop-color="#fb7185"/>
+      <stop offset="100%" stop-color="#fda4af"/>
+    </linearGradient>
+
+    <!-- Brand Art Gradient for Light Wordmark -->
+    <linearGradient id="brandArtTextL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="50%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#fb7185"/>
+    </linearGradient>
+
+    <!-- Dark Glow Filter -->
+    <filter id="softGlowDark" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#a855f7" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== EMBLEM ==================== -->
+  <g id="logoEmblemL" transform="translate(6, 3) scale(0.92)">
+    <!-- 1. LEFT HEART RIBBON -->
+    <path d="M 23 9 C 14 13 8 21 8 32 C 8 46 16 60 27 63 C 21 57 15 46 15 34 C 15 25 19 18 26 14 C 29 12 32 11 34 11 L 33 8 C 29 8 26 8 23 9 Z" 
+          fill="url(#purpleRibbonL)" filter="url(#softGlowDark)"/>
+
+    <path d="M 32 9 C 27 12 24 18 24 25 C 24 37 21 49 16 57 C 19 50 22 41 22 30 C 22 22 25 15 31 11 Z" 
+          fill="url(#purpleRibbonL)" opacity="0.95"/>
+
+    <path d="M 24 10 C 17 14 12 22 11 32 C 11 37 13 43 16 48 C 14 43 13 37 13 32 C 13 23 18 16 25 12 Z" 
+          fill="url(#purpleRibbonSheenL)"/>
+
+    <!-- 2. RIGHT HEART RIBBON -->
+    <path d="M 43 14 C 47 13 52 16 55 21 C 59 27 60 36 57 44 C 54 52 49 59 45 64 C 51 58 56 49 57 41 C 58 33 56 25 51 20 C 48 17 45 15 42 16 Z" 
+          fill="url(#purpleRibbonRightL)"/>
+
+    <path d="M 43 14 L 44 17 C 47 18 50 21 52 25 C 55 31 55 39 53 46 C 54 41 54 34 52 28 C 50 23 47 20 44 18 Z" 
+          fill="url(#purpleRibbonSheenL)"/>
+
+    <!-- 3. INNER HAIR WAVE -->
+    <path d="M 35 15 C 31 18 28 23 27 28 C 26 34 26 39 24 45 C 25 39 27 34 29 30 C 31 25 34 21 38 18 Z" 
+          fill="url(#purpleRibbonL)"/>
+
+    <!-- 4. SERENE VISAGE PROFILE -->
+    <path d="M 37 14 C 34 18 30 25 28 32 C 26 40 25 46 29 51 C 29 48 30 45 31 43 C 31 40 33 37 36 34 C 38 31 40 28 40 25 C 40 20 38 16 37 14 Z" 
+          fill="url(#jadeHighlightL)"/>
+
+    <path d="M 36 14 C 38 19 39 24 38 28 C 39 29.5 40.5 31 41.5 32.8 C 42.5 34.2 43.5 36.5 42.8 38 C 42.2 39 40.8 39.5 40.2 40.2 C 41 41 41.8 41.8 41.6 42.8 C 41.4 43.8 40.2 44.4 39.2 44.8 C 39.8 46.5 39.5 48.2 38.5 49.5 C 36.8 51.5 34.5 53 32 54 C 33.8 51.8 34.5 49 33.8 46.5 C 32 45.5 30 47.5 28.5 49 C 26.5 43.5 26.8 37 28.5 31 C 30.5 24 33.2 18.5 36 14 Z" 
+          fill="url(#jadeFaceL)" filter="url(#softGlowDark)"/>
+
+    <path d="M 37 29 C 39 29.5 40.5 31 41 32" 
+          stroke="#064e3b" stroke-width="0.9" stroke-linecap="round" fill="none"/>
+
+    <path d="M 39.8 40.5 C 40.6 41 41.2 41.5 40.8 42.2" 
+          stroke="#065f46" stroke-width="0.8" stroke-linecap="round" fill="none"/>
+
+    <!-- 5. RADIANT ROSE MAGENTA COLLAR RIBBONS -->
+    <path d="M 31 46 C 36 47 42 49 47 53 C 51 57 53 61 54 65 C 52 61 48 56 44 53 C 39 50 34 48 31 46 Z" 
+          fill="url(#magentaRibbonL)"/>
+
+    <path d="M 19 50 C 26 50 33 52 40 55 C 47 59 52 64 55 70 C 51 64 45 59 38 56 C 31 53 25 52 19 50 Z" 
+          fill="url(#magentaRibbonLowerL)"/>
+  </g>
+
+  <!-- ==================== LUXURY WORDMARK "HAIR ART" (DARK THEME) ==================== -->
+  <g transform="translate(72, 0)">
+    <!-- Primary Brand Title -->
+    <text x="0" y="40" 
+          font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" 
+          font-size="28" 
+          font-weight="800" 
+          letter-spacing="0.04em" 
+          fill="#ffffff">HAIR<tspan dx="8" fill="url(#brandArtTextL)">ART</tspan></text>
+
+    <!-- Subtitle: Clinic & Aesthetics -->
+    <text x="2" y="56" 
+          font-family="'Inter', system-ui, -apple-system, sans-serif" 
+          font-size="8.8" 
+          font-weight="600" 
+          letter-spacing="0.26em" 
+          fill="#cbd5e1">CLINIC &amp; AESTHETICS</text>
+
+    <!-- Luxury Precision Diamond Accent -->
+    <circle cx="168" cy="32" r="2.2" fill="url(#brandArtTextL)"/>
+  </g>
+</svg>

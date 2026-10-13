@@ -1,17 +1,21 @@
 /**
- * Accessible FAQ Accordion
+ * Accessible FAQ Accordion with Keyboard Navigation & Dynamic Height
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   const faqItems = document.querySelectorAll('.faq-item');
+  if (!faqItems.length) return;
 
-  faqItems.forEach(item => {
+  const buttons = Array.from(document.querySelectorAll('.faq-question-btn'));
+
+  faqItems.forEach((item, index) => {
     const btn = item.querySelector('.faq-question-btn');
     const pane = item.querySelector('.faq-answer-pane');
 
     if (!btn || !pane) return;
 
-    btn.addEventListener('click', () => {
+    // Toggle handler
+    const toggleItem = () => {
       const isAlreadyActive = item.classList.contains('active');
 
       // Close other active items in the same list (accordion style)
@@ -35,6 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.setAttribute('aria-expanded', 'true');
         pane.style.maxHeight = pane.scrollHeight + 'px';
       }
+    };
+
+    btn.addEventListener('click', toggleItem);
+
+    // Keyboard navigation across accordion headers
+    btn.addEventListener('keydown', (e) => {
+      let targetIndex = -1;
+      if (e.key === 'ArrowDown') {
+        targetIndex = (index + 1) % buttons.length;
+      } else if (e.key === 'ArrowUp') {
+        targetIndex = (index - 1 + buttons.length) % buttons.length;
+      } else if (e.key === 'Home') {
+        targetIndex = 0;
+      } else if (e.key === 'End') {
+        targetIndex = buttons.length - 1;
+      }
+
+      if (targetIndex !== -1) {
+        e.preventDefault();
+        buttons[targetIndex].focus();
+      }
     });
   });
 
@@ -49,4 +74,15 @@ document.addEventListener('DOMContentLoaded', () => {
       firstPane.style.maxHeight = firstPane.scrollHeight + 'px';
     }
   }
+
+  // Recalculate open heights on window resize to prevent text truncation
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      document.querySelectorAll('.faq-item.active .faq-answer-pane').forEach(pane => {
+        pane.style.maxHeight = pane.scrollHeight + 'px';
+      });
+    }, 100);
+  }, { passive: true });
 });

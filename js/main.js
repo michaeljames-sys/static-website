@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initActiveNavLink();
   initScrollReveal();
   initStatCounters();
+  initRatingBars();
 });
 
 /**
@@ -407,3 +408,39 @@ function initStatCounters() {
 
   statElements.forEach(el => observer.observe(el));
 }
+
+/**
+ * Rating Overview Progress Bar Animation (0 to 5.0 Scale)
+ * Fills rating progress bar smoothly from 0 to 4.8 (96%) when scrolled into view
+ */
+function initRatingBars() {
+  const masterFills = document.querySelectorAll('.rating-bar-compact-fill, .rating-master-fill');
+  if (!masterFills.length) return;
+
+  const animateFill = (fill) => {
+    const targetWidth = fill.getAttribute('data-fill') || '96%';
+    setTimeout(() => {
+      fill.style.width = targetWidth;
+    }, 120);
+  };
+
+  if (!('IntersectionObserver' in window)) {
+    masterFills.forEach(fill => animateFill(fill));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateFill(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.15,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  masterFills.forEach(fill => observer.observe(fill));
+}
+

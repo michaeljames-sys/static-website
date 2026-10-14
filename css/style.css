@@ -2011,8 +2011,173 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ==========================================================================
-   PATIENT TESTIMONIALS SECTION
+   COMPACT SOCIAL PROOF RATING BAR (0 TO 5.0 ANIMATION)
    ========================================================================== */
+.rating-strip-compact {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.15rem 1.75rem;
+  margin-bottom: 2.75rem;
+  box-shadow: 0 4px 18px -4px rgba(15, 23, 42, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  border-left: 4px solid var(--color-accent);
+}
+
+.rating-strip-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.rating-strip-score-badge {
+  background: var(--color-accent-light);
+  color: var(--color-accent-dark);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+  padding: 0.55rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  letter-spacing: -0.02em;
+}
+
+.rating-strip-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.rating-strip-stars-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.rating-strip-stars {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  color: var(--color-gold);
+}
+
+.rating-strip-stars svg {
+  width: 17px;
+  height: 17px;
+  fill: currentColor;
+}
+
+.rating-strip-tag {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-left: 0.35rem;
+}
+
+.rating-strip-milestone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.rating-pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #10b981;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.rating-pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(16, 185, 129, 0.45);
+  animation: ratingPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes ratingPulse {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.65);
+    opacity: 0;
+  }
+}
+
+/* Right Section: Slim Progress Bar and Score */
+.rating-strip-right {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  flex: 1;
+  max-width: 440px;
+}
+
+.rating-strip-bar-track {
+  flex: 1;
+  height: 9px;
+  background: rgba(148, 163, 184, 0.22);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.rating-bar-compact-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-accent) 0%, #14b8a6 50%, #f59e0b 100%);
+  transition: width 1.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: width;
+}
+
+.rating-strip-score-val {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-text-main);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  align-items: baseline;
+  gap: 0.15rem;
+}
+
+.rating-strip-score-val span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .rating-strip-compact {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.25rem;
+    padding: 1.25rem 1.35rem;
+  }
+  .rating-strip-right {
+    max-width: 100%;
+  }
+}
+
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -2060,6 +2225,8 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 1.75rem;
   flex: 1;
   font-style: italic;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .testimonial-author {

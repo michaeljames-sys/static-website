@@ -113,13 +113,13 @@
           letter-spacing="0.04em" 
           fill="#ffffff">HAIR<tspan dx="8" fill="url(#brandArtTextL)">ART</tspan></text>
 
-    <!-- Subtitle: Clinic & Aesthetics -->
+    <!-- Subtitle: & Skin Care Clinic -->
     <text x="2" y="56" 
           font-family="'Inter', system-ui, -apple-system, sans-serif" 
-          font-size="8.8" 
-          font-weight="600" 
-          letter-spacing="0.26em" 
-          fill="#cbd5e1">CLINIC &amp; AESTHETICS</text>
+          font-size="9" 
+          font-weight="700" 
+          letter-spacing="0.16em" 
+          fill="#2dd4bf">&amp; SKIN CARE CLINIC</text>
 
     <!-- Luxury Precision Diamond Accent -->
     <circle cx="168" cy="32" r="2.2" fill="url(#brandArtTextL)"/>
